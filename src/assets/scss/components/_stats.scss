@@ -5,4 +5,9 @@
 .stats {
 	display: flex;
 	margin: 0 -12px;
+
+	@include breakpoint-down(mobile) {
+		margin: 0;
+		display: block;
+	}
 }

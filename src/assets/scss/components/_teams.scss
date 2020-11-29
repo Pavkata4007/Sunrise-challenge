@@ -7,11 +7,22 @@
 	.teams__items {
 		display: flex;
 		margin: 0 -8px;
+
+		@include breakpoint-down(mobile) {
+			margin: 0;
+			display: block;
+		}
 	}
 
 	.teams__item {
 		max-width: 33.33%;
 		flex: 0 0 33.33%;
 		padding: 0 8px;
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 }

@@ -5,11 +5,23 @@
 .section-cards  {
 	margin: -256px 0 71px;
 
+	@include breakpoint-down(tablet) {
+		margin: -150px 0 30px;
+	}
+
+	@include breakpoint-down(mobile) {
+		margin: -245px 0 45px;
+	}
 
 	h3 {
 		text-transform: uppercase;
 		color: $c-white;
 		letter-spacing: -0.02em;
 		margin-bottom: 31px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			margin-bottom: 24px;
+		}
 	}
 }

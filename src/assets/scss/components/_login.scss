@@ -7,7 +7,42 @@
 	text-align: center;
 	padding: 4px 0;
 	font-size: 15px;
-	width: 135px;
+	width: 133px;
 	font-weight: 600;
 	text-transform: uppercase;
+	transition: background .2s, color .2s;
+
+	&:hover {
+		background: $c-purple;
+		color: $c-white;
+	}
+
+	&:hover svg path {
+		fill: #fff;
+	}
+
+}
+
+.login--alt {
+	display: none;
+	background-color: transparent;
+	color: $c-white;
+
+	@include breakpoint-down(tablet) {
+		display: block;
+	}
+
+	@include breakpoint-down(mobile) {
+		width: 71px;
+		font-size: 14px;
+	}
+
+	&:hover {
+		background: transparent;
+		color: $c-purple;
+	}
+
+	&:hover svg path {
+		fill: $c-purple;
+	}
 }

@@ -5,12 +5,20 @@
 .footer-nav {
 	text-align: right;
 
+	@include breakpoint-down(mobile) {
+		text-align: center;
+	}
+
 	li {
 		list-style: none;
 	}
 
 	li + li {
 		margin-top: 7px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 1px;
+		}
 	}
 
 	a {
@@ -18,5 +26,16 @@
 		font-weight: 600;
 		letter-spacing: -0.02em;
 		font-size: 16px;
+		transition: color .3s, opacity .3s;
+
+		@include breakpoint-down(mobile) {
+			font-size: 14px;
+			line-height: 2.14;
+		}
+	}
+
+	a:hover {
+		color: #A5D1F4;
+		opacity: .5;
 	}
 }

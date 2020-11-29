@@ -8,11 +8,25 @@
 	line-height: 1.88;
 	letter-spacing: -0.02em;
 
+	@include breakpoint-down(mobile) {
+		font-size: 14px;
+		line-height: 1.57;
+	}
+
 	h6 {
 		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			font-size: 14px;
+		}
 	}
 
 	a {
 		text-decoration: underline;
+		transition: opacity .3s;
+	}
+
+	a:hover {
+		opacity: .5;
 	}
 }

@@ -5,6 +5,10 @@
 .nav-access {
 	ul {
 		display: flex;
+
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
 	}
 
 	li {

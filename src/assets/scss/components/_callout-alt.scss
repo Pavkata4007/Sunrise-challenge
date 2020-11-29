@@ -7,12 +7,21 @@
 	color: $c-white;
 	padding: 27px 0 30px;
 
+	@include breakpoint-down(mobile) {
+		padding: 20px 0 22px;
+	}
+
 	h6 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		position: relative;
 		padding-bottom: 10px;
 		margin-top: 5px;
+
+		@include breakpoint-down(mobile) {
+			margin: 0 auto 23px;
+			padding-bottom: 4px;
+		}
 	}
 
 	h6:after {
@@ -23,17 +32,33 @@
 		right: 0;
 		background-color: #A5D1F4;
 		height: 4px;
+
+		@include breakpoint-down(mobile) {
+			height: 2px;
+		}
 	}
 
 	.callout__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
 	}
 
 	.callout__content {
 		display: flex;
 		align-items: center;
+
+		@include breakpoint-down(mobile) {
+			justify-content: center;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			display: block;
+		}
 	}
 
 	.callout__socials ul {
@@ -46,10 +71,19 @@
 		letter-spacing: -0.02em;
 		line-height: 1.38;
 		margin: 0 11px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 14px;
+			margin: 0 9px;
+		}
 	}
 
 	.callout__socials li + li {
 		margin-left: 23px;
+
+		@include breakpoint-down(mobile) {
+			margin-left: 14px;
+		}
 	}
 
 	.callout__socials a {

@@ -5,16 +5,41 @@
 .section-sponsors {
 	padding: 71px 0 56px;
 
+	@include breakpoint-down(tablet) {
+		padding: 30px 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 43px 0 34px;
+	}
+
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		margin-bottom: 18px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 25px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+		}
 	}
 
 	.section__entry {
 		max-width: 650px;
 		letter-spacing: -0.013em;
 		margin-bottom: 41px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 49px;
+		}
 	}
 
 	.section__content {
@@ -23,5 +48,10 @@
 
 	.section__content h5 {
 		margin-bottom: 16px;
+
+		@include breakpoint-down(mobile) {
+			letter-spacing: -0.013em;
+			font-size: 16px;
+		}
 	}
 }

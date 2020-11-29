@@ -7,4 +7,21 @@
 	flex: 0 0 33.33%;
 	padding: 0 8px;
 	margin-bottom: 16px;
+	transition: opacity .4s;
+
+	@include breakpoint-down(mobile) {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		max-width: 100%;
+		flex: 0 0 100%;
+		padding: 0;
+		margin-bottom: 9px;
+	}
+
+	&:hover {
+		opacity: .6;
+	}
 }

@@ -9,10 +9,29 @@
 	color: $c-white;
 	margin: 0 20px;
 
+	@include breakpoint-down(tablet) {
+		padding: 40px 0 30px;
+	}
+
+	@include breakpoint-down(mobile) {
+		margin: 0 15px;
+		padding: 45px 7px 8px;
+		background-position: center;
+	}
+
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		margin-bottom: 17px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 23px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			margin-bottom: 11px;
+		}
 	}
 
 	.section__entry {
@@ -20,5 +39,14 @@
 		letter-spacing: -0.013em;
 		max-width: 650px;
 		margin-bottom: 37px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 30px;
+		}
 	}
 }

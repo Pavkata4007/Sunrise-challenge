@@ -7,7 +7,23 @@
 	flex: 0 0 33.33%;
 	padding: 0 12px;
 
+	@include breakpoint-down(mobile) {
+		padding: 0;
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+
 	.stat__actions a {
 		margin-bottom: 35px;
+
+		@include breakpoint-down(mobile-medium) {
+			width: 100%;
+		}
+	}
+
+	h3 {
+		@include breakpoint-down(mobile) {
+			margin-bottom: 16px;
+		}
 	}
 }

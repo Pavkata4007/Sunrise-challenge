@@ -5,9 +5,26 @@
 .section-teams {
 	padding: 74px 0 80px;
 
+	@include breakpoint-down(tablet) {
+		padding: 50px 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 48px 0 18px;
+	}
+
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		margin-bottom: 30px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 25px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			margin-bottom: 45px;
+		}
 	}
 }

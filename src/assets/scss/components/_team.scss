@@ -5,6 +5,14 @@
 .team {
 	text-align: center;
 
+	@include breakpoint-down(mobile) {
+		margin-bottom: 34px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
 	.team__image {
 		width: 249px;
 		margin: 0 auto;
@@ -15,15 +23,34 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		margin-bottom: 18px;
+
+		@include breakpoint-down(mobile) {
+			width: 203px;
+			height: 203px;
+		}
 	}
 
 	.team__content {
 		line-height: 1.33;
 		letter-spacing: -0.013em;
+
+		@include breakpoint-down(tablet) {
+			font-size: 16px;
+		}
+
+		@include breakpoint-down(mobile) {
+			max-width: 420px;
+			margin: 0 auto;
+		}
 	}
 
 	h5 {
 		letter-spacing: -0.013em;
+
+		@include breakpoint-down(mobile) {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
 	}
 
 	span {
@@ -33,9 +60,24 @@
 
 	p {
 		margin: 10px 0 39px;
+
+		@include breakpoint-down(mobile) {
+			margin: 19px 0 26px;
+		}
 	}
 
-	.team__actions a {
+	.team__actions span {
+		display: inline-block;
 		padding: 12px 69px;
+		letter-spacing: 0;
+		transition: background .3s;
+
+		@include breakpoint-down(mobile-medium) {
+			width: 100%;
+		}
+	}
+
+	a:hover .team__actions span {
+		background-color: #A5D1F4;
 	}
 }

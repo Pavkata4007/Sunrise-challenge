@@ -8,11 +8,23 @@
 		display: flex;
 		align-items: center;
 		margin: 0 -8px;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			margin: 0;
+		}
 	}
 
 	.cards__item {
 		max-width: 33.33%;
 		flex: 0 0 33.33%;
 		padding: 0 8px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			padding: 0;
+			margin-bottom: 28px;
+		}
 	}
 }

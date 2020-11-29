@@ -7,27 +7,44 @@
 	color: $c-white;
 	padding: 14px 0 20px;
 
+	@include breakpoint-down(mobile) {
+		padding: 25px 0 20px;
+	}
+
 	.footer__logo {
 		max-width: 137px;
 		margin: 17px 0 13px;
+
+		@include breakpoint-down(mobile) {
+			margin:  0 auto 8px;
+		}
 	}
 
 	.footer__bar {
 		border-top: 1px solid #63317D;
 		padding: 27px 0;
 		text-align: center;
+
+		@include breakpoint-down(mobile) {
+			padding: 25px 0 13px;
+		}
 	}
 
 	.footer__inner {
 		display: flex;
 		justify-content: space-between;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			text-align: center;
+		}
 	}
 
 	.footer__content {
 		margin-bottom: 29px;
-	}
 
-	.footer__bar {
-
+		@include breakpoint-down(mobile) {
+			margin-bottom: 24px;
+		}
 	}
 }
