@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+	card
+\* ------------------------------------------------------------ */
+
+.card {
+
+	.card__image {
+		margin-bottom: 24px;
+	}
+
+	.card__content h3 {
+		color: $c-purple;
+		margin-bottom: 21px;
+	}
+
+	.card__content {
+		letter-spacing: -0.013em;
+	}
+
+	.card__content p {
+		margin-bottom: 41px;
+	}
+
+	.card__actions a {
+		padding: 12px 76px;
+	}
+
+	.card__actions--alt a {
+		padding: 12px 15px;
+	}
+}

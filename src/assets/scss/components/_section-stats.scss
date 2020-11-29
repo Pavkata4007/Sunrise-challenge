@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------ *\
+	section-stats
+\* ------------------------------------------------------------ */
+
+.section-stats {
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 71px 0 45px;
+	color: $c-white;
+	margin: 0 20px;
+
+	h3 {
+		text-transform: uppercase;
+		letter-spacing: -0.02em;
+		margin-bottom: 17px;
+	}
+
+	.section__entry {
+		line-height: 1.33;
+		letter-spacing: -0.013em;
+		max-width: 650px;
+		margin-bottom: 37px;
+	}
+}

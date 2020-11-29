@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	team
+\* ------------------------------------------------------------ */
+
+.team {
+	text-align: center;
+
+	.team__image {
+		width: 249px;
+		margin: 0 auto;
+		height: 249px;
+		border-radius: 50%;
+		border: 6px solid #F1B434;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 18px;
+	}
+
+	.team__content {
+		line-height: 1.33;
+		letter-spacing: -0.013em;
+	}
+
+	h5 {
+		letter-spacing: -0.013em;
+	}
+
+	span {
+		display: block;
+		letter-spacing: -0.013em;
+	}
+
+	p {
+		margin: 10px 0 39px;
+	}
+
+	.team__actions a {
+		padding: 12px 69px;
+	}
+}

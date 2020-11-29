@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	socials
+\* ------------------------------------------------------------ */
+
+.socials {
+
+	ul {
+		display: flex;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	li + li {
+		margin-left: 29px;
+	}
+
+	a {
+		display: block;
+		width: 49px;
+		height: 49px;
+		border-radius: 50%;
+		border: 2px solid #A5D1F4;
+		position: relative;
+	}
+
+	a img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	a svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

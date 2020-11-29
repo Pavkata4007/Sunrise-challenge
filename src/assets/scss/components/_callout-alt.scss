@@ -1,0 +1,69 @@
+/* ------------------------------------------------------------ *\
+	callout-alt
+\* ------------------------------------------------------------ */
+
+.callout-alt {
+	background-color: #63317D;
+	color: $c-white;
+	padding: 27px 0 30px;
+
+	h6 {
+		text-transform: uppercase;
+		letter-spacing: -0.02em;
+		position: relative;
+		padding-bottom: 10px;
+		margin-top: 5px;
+	}
+
+	h6:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #A5D1F4;
+		height: 4px;
+	}
+
+	.callout__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.callout__content {
+		display: flex;
+		align-items: center;
+	}
+
+	.callout__socials ul {
+		margin: 0 5px 0;
+	}
+
+	span {
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		line-height: 1.38;
+		margin: 0 11px;
+	}
+
+	.callout__socials li + li {
+		margin-left: 23px;
+	}
+
+	.callout__socials a {
+		width: 38px;
+		height: 38px;
+	}
+
+	.callout__socials a svg {
+		width: 16px;
+		height: 20px;
+	}
+
+	.callout__socials a img {
+		width: 22px;
+		height: 19px;
+	}
+}

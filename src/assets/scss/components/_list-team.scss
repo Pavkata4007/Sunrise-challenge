@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	list-team
+\* ------------------------------------------------------------ */
+
+.list-team {
+	margin-bottom: 19px;
+
+	li {
+		margin: 0 25px;
+		padding: 0 13px;
+		font-size: 18px;
+		letter-spacing: -0.013em;
+	}
+
+	li + li {
+		margin-top: 9px;
+	}
+
+	span {
+		display: inline-block;
+	}
+
+	li:after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	strong {
+		display: inline-block;
+		float: right;
+	}
+}

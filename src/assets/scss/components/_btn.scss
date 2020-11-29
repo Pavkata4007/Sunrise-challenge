@@ -9,6 +9,9 @@
 	cursor: pointer;
 	text-decoration: none;
 	appearance: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 /*  Btn block  */
@@ -17,4 +20,35 @@
 	display: block;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.btn--purple {
+	color: $c-white;
+	background-color: $c-purple;
+	padding: 16px 37px;
+}
+
+.btn--transparent {
+	background-color: transparent;
+	border: 2px solid #A5D1F4;
+	letter-spacing: 0.029em;
+	padding: 12px 47px;
+}
+
+.btn--view {
+	font-size: 14px;
+	letter-spacing: -0.013em;
+	text-transform: none;
+	text-decoration: underline;
+	display: block;
+	font-weight: 400;
+	text-align: left;
+}
+
+.btn--shorter {
+	padding: 12px 37px;
+}
+
+.btn--shortest {
+	padding: 12px 7px;
 }

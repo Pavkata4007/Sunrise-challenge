@@ -3,4 +3,35 @@
 \* ------------------------------------------------------------ */
 
 .header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+
+	.header__bar {
+		background-color: $c-black;
+		text-align: right;
+	}
+
+	.header__login {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.header__inner {
+		background: rgba(0, 0, 0, .7);
+	}
+
+	.header__entry {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1px 0 2px;
+	}
+
+	.header__content {
+		display: flex;
+		align-items: center;
+	}
+
 }
