@@ -14,17 +14,38 @@
 	transform-origin: top;
 	transition: transform .5s, opacity .3s;
 
+	@include breakpoint-down(tablet) {
+		position: static;
+		top:0;
+		left: 0;
+		max-height: 0;
+		width: 110%;
+		background-color: #4A1961;
+		margin: 0 -15px;
+	}
+
+
 	a {
 		text-decoration: none;
 		letter-spacing: -0.02em !important;
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 1.38;
+
+		@include breakpoint-down(tablet) {
+			font-size: 22px;
+			line-height: 1.5;
+		}
 	}
 
 	li {
 		background: #6E298D;
 		padding: 14px 2px 18px;
+
+		@include breakpoint-down(tablet) {
+			padding: 16px 15px 9px;
+			background-color: transparent;
+		}
 	}
 
 	li:hover {
@@ -37,5 +58,17 @@
 
 	li + li {
 		margin-left: 0 !important;
+
+		@include breakpoint-down(tablet) {
+			margin-top: 0 !important;
+		}
+	}
+
+	&.is-showing {
+		opacity: 1 !important;
+		transform: none;
+		visibility: visible;
+		max-height: 1000px;
+		margin-top: 11px;
 	}
 }

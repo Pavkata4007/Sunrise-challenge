@@ -8,9 +8,15 @@
 		display: none;
 	}
 
+
 	& > ul {
 		display: flex;
 		margin-left: 44px;
+
+		@include breakpoint-down(tablet) {
+			display: block;
+			margin-left: 0;
+		}
 	}
 
 	li {
@@ -26,6 +32,11 @@
 		text-decoration: none;
 		position: relative;
 		padding: 0 3px 8px 6px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 22px;
+			letter-spacing: -0.02em;
+		}
 	}
 
 	a img {
@@ -44,17 +55,38 @@
 		transition: transform .6s;
 	}
 
+	.is-showing:after {
+		transform: scaleX(1);
+		background-color: #4A1961;
+		height: 5px;
+		top: 115%;
+	}
+
 	a:hover:after {
 		transform: scaleX(1);
+
+		@include breakpoint-down(tablet) {
+			transform: none;
+		}
 	}
 
 	li:hover .dropdown {
 		transform: scaleY(1);
 		opacity: 1;
+
+		@include breakpoint-down(tablet) {
+			transform: none;
+			opacity: 0;
+		}
 	}
 
 	& > ul li + li {
 		margin-left: 31px;
+
+		@include breakpoint-down(tablet) {
+			margin-left: 0;
+			margin-top: 18px;
+		}
 	}
 
 	li a:only-child img {

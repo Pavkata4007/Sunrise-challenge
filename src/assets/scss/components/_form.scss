@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------ *\
+	form
+\* ------------------------------------------------------------ */
+
+.form {
+
+	.form__row {
+		display: flex;
+		margin: 0 -8px 17px;
+	}
+
+	.form__row .form__controls {
+		max-width: 50%;
+		flex: 0 0 50%;
+		padding: 0 8px;
+	}
+
+	.form__meta {
+		margin-bottom: 42px;
+	}
+
+	.form__meta span {
+		margin-left: 40px;
+	}
+
+	.form__meta span a {
+		margin: 0 5px;
+	}
+
+	.form__btn {
+		border: 2px solid #A5D1F4;
+		background-color: transparent;
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 0.029em;
+		font-weight: 700;
+		padding: 12px 85px;
+	}
+}

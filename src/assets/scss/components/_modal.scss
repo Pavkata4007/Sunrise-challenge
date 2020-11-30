@@ -1,0 +1,168 @@
+/* ------------------------------------------------------------ *\
+	modal
+\* ------------------------------------------------------------ */
+
+.modal {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+
+	&.is-active {
+		position: fixed;
+		pointer-events:all;
+		opacity: 1;
+		height: 100vh;
+		background-color: $c-purple;
+		color: $c-white;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.modal__inner {
+		position: relative;
+		max-width: 744px;
+		margin: 0 auto;
+		padding: 202px 0 142px;
+		letter-spacing: -0.013em;
+	}
+
+	.modal__icon {
+		position: absolute;
+		top: 19%;
+    	right: -9%;
+	}
+
+	h3 {
+		text-transform: uppercase;
+		letter-spacing: -0.02em;
+		margin-bottom: 10px;
+	}
+
+	p {
+		margin-bottom: 28px;
+	}
+
+	.modal__bar {
+		display: flex;
+		background-color: #4A1961;
+	}
+
+	.modal__bar a {
+		display: block;
+		max-width: 50%;
+		flex: 0 0 50%;
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 0.025em;
+		padding: 23px 154px;
+		text-transform: uppercase;
+	}
+
+	.modal__bar a:first-child {
+		text-align: right;
+	}
+
+	.modal__actions a {
+		transition: color .3s, background .3s;
+	}
+
+	.modal__actions a:hover {
+		background-color: $c-white;
+		color: $c-purple;
+	}
+}
+
+.modal--register {
+	.modal__inner {
+		padding: 234px 0 215px;
+	}
+
+	p {
+		margin-bottom: 26px;
+	}
+
+	span {
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: -0.013em;
+		display: block;
+		margin-bottom: 26px;
+	}
+
+	a + a {
+		margin-left: 23px;
+	}
+}
+
+.modal--donate {
+
+	.modal__inner {
+		padding: 222px 0 243px;
+	}
+
+	p {
+		margin-bottom: 37px;
+	}
+
+	a + a {
+		margin-left: 13px;
+	}
+
+	.modal__actions a:nth-child(1) {
+		padding: 12px 60px;
+	}
+
+	.modal__actions a:nth-child(2) {
+		padding: 12px 89px;
+	}
+
+	.modal__actions a:nth-child(3) {
+		padding: 12px 20px;
+	}
+}
+
+.modal--participant {
+
+	.modal__inner {
+		padding: 200px 0 185px;
+	}
+
+	p {
+		margin-bottom: 30px;
+	}
+
+	.form__row {
+		margin-bottom: 41px;
+	}
+}
+
+.modal--team {
+
+	.modal__inner {
+		padding: 198px 0 184px;
+	}
+
+	p {
+		margin-bottom: 32px;
+	}
+
+	.modal__form .form__controls {
+		margin-bottom: 40px;
+	}
+}
+
+.modal--keep-in-touch {
+
+	.modal__inner {
+		padding: 141px 0 76px;
+	}
+
+	.modal__form .form__controls {
+		margin-bottom: 14px;
+	}
+
+
+
+}
