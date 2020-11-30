@@ -15,4 +15,6 @@ $('.js-mobile-nav').on('click', function() {
 	if (scroll >= 100) {
 		$('.header .header__inner').removeClass('is-fixed');
 	}
+
+	$('.wrapper').toggleClass('is-fixed');
 });
