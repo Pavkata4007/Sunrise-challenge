@@ -7,6 +7,10 @@
 	border: none;
 	width: 100%;
 	padding: 11px 15px;
+
+	@include breakpoint-down(mobile) {
+		padding: 9px 15px;
+	}
 }
 
 /*  Field textarea  */
