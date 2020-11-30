@@ -58,3 +58,9 @@
 		transform: translate(-50%, -50%);
 	}
 }
+
+.socials--alt {
+	a:hover {
+		border: 2px solid $c-purple;
+	}
+}

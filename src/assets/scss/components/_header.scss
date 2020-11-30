@@ -29,6 +29,10 @@
 		justify-content: flex-end;
 	}
 
+	.header__logo a:nth-child(2) {
+		display: none;
+	}
+
 	.header__inner {
 		background: rgba(0, 0, 0, .7);
 
@@ -45,8 +49,12 @@
 				background-color: $c-purple;
 			}
 
-			.header__logo {
-				background-color: $c-purple;
+			.header__logo a:nth-child(1) {
+				display: none;
+			}
+
+			.header__logo a:nth-child(2) {
+				display: block;
 				width: 100px;
 				padding: 10px 5px;
 			}

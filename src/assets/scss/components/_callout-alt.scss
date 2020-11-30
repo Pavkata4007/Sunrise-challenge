@@ -15,8 +15,10 @@
 		text-decoration: none;
 	}
 
+
 	h6 {
 		text-transform: uppercase;
+		transition: opacity .4s;
 		letter-spacing: -0.02em;
 		position: relative;
 		padding-bottom: 10px;
@@ -26,6 +28,10 @@
 			margin: 0 auto 23px;
 			padding-bottom: 4px;
 		}
+	}
+
+	h6:hover {
+		opacity: .5;
 	}
 
 	h6:after {

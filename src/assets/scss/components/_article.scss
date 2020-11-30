@@ -118,14 +118,14 @@
 		}
 	}
 
-	a .article__actions{
+	.article__actions {
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 15px;
 		}
 	}
 
-	a .article__actions span {
+	.article__actions a {
 		transition: background .3s, color .3s;
 
 		@include breakpoint-down(mobile-medium) {
@@ -133,7 +133,7 @@
 		}
 	}
 
-	a:hover .article__actions span {
+	.article__actions a:hover {
 		background-color: $c-white;
 		color: $c-purple;
 	}
@@ -297,11 +297,11 @@
 	}
 
 
-	a .article__actions span {
+	.article__actions a {
 		transition: background .3s, color .3s;
 	}
 
-	a:hover .article__actions span {
+	.article__actions a:hover {
 		background-color: $c-white;
 		color: $c-purple;
 	}
