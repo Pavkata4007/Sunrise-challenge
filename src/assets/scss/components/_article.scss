@@ -289,6 +289,7 @@
 
 	.article__socials span {
 		margin: 0 3px;
+		font-size: 16px;
 
 		@include breakpoint-down(mobile) {
 			font-size: 14px;

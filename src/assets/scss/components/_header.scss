@@ -34,7 +34,7 @@
 	}
 
 	.header__inner {
-		background: rgba(0, 0, 0, .7);
+		background: rgba(0, 0, 0, .38);
 
 		&.is-fixed {
 			position: fixed;
@@ -87,10 +87,6 @@
 		}
 	}
 
-	.header__logo {
-		margin-left: 30px;
-	}
-
 	.header__entry {
 		display: flex;
 		justify-content: space-between;
@@ -114,6 +110,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
+	overflow-y:scroll;
 	text-align: left;
 	background: rgba(255 ,255, 255, .9);
 	height: 100vh;
