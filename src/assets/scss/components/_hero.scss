@@ -5,10 +5,10 @@
 .hero {
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 	padding: 151px 0 0;
 	color: $c-white;
 	height: 715px;
-	margin-bottom: 18px;
 
 	@include breakpoint-down(tablet) {
 		height: 599px;
@@ -94,5 +94,25 @@
 	.hero__actions a:hover:after {
 		transform-origin: left;
 		transform: scaleX(0);
+	}
+}
+
+.hero--alt {
+	padding: 134px 0 0;
+    height: 619px;
+
+	.hero__logo {
+		text-align: center;
+		height: 290px;
+		margin-bottom: 82px;
+	}
+
+	.hero__content {
+		margin: 0 auto;
+	}
+
+	.hero__content h1 {
+		font-weight: 600;
+		margin-left: 27px;
 	}
 }

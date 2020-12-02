@@ -6,6 +6,7 @@
 
 	.card__image {
 		margin-bottom: 24px;
+		position: relative;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 23px;
@@ -72,5 +73,17 @@
 		@include breakpoint-down(tablet) {
 			padding: 12px;
 		}
+	}
+
+	.card__member {
+		position: absolute;
+		top: 50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		border: 4px solid $c-white;
+		overflow: hidden;
+		height: 135px;
+		width: 135px;
 	}
 }
