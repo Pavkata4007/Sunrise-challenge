@@ -5,7 +5,7 @@
 .footer {
 	background-color: #4A1961;
 	color: $c-white;
-	padding: 14px 0 20px;
+	padding: 23px 0 20px;
 
 	@include breakpoint-down(mobile) {
 		padding: 25px 0 20px;
@@ -13,7 +13,7 @@
 
 	.footer__logo {
 		max-width: 137px;
-		margin: 17px 0 13px;
+    	margin: 9px 0 21px;
 
 		@include breakpoint-down(mobile) {
 			margin:  0 auto 8px;
@@ -22,7 +22,7 @@
 
 	.footer__bar {
 		border-top: 1px solid #63317D;
-		padding: 27px 0;
+		padding: 35px 0 19px;
 		text-align: center;
 
 		@include breakpoint-down(mobile) {
@@ -41,7 +41,7 @@
 	}
 
 	.footer__content {
-		margin-bottom: 29px;
+		margin-bottom: 21px;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 24px;

@@ -16,7 +16,7 @@
 	}
 
 	.header__bar {
-		background-color: $c-black;
+		background: rgb(43, 43, 43);
 		text-align: right;
 
 		@include breakpoint-down(tablet) {
@@ -34,7 +34,7 @@
 	}
 
 	.header__inner {
-		background: rgba(0, 0, 0, .38);
+		background: rgba(0, 0, 0, .7);
 
 		&.is-fixed {
 			position: fixed;
