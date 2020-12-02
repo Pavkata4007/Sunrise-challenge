@@ -1,0 +1,38 @@
+/* ------------------------------------------------------------ *\
+	list-stats
+\* ------------------------------------------------------------ */
+
+.list-stats {
+
+	li {
+		list-style: none;
+		display: flex;
+		font-size: 28px;
+		line-height: 1.36;
+		margin-bottom: 14px;
+	}
+
+	span {
+		max-width: 24%;
+		flex: 0 0 24%;
+		margin: 0 7px 0 0;
+		display: block;
+		background: #F1B434;
+		color: $c-purple;
+		padding: 4px 15px;
+	}
+
+	strong {
+		max-width: 76%;
+		flex: 0 0 76%;
+		margin: 0 0 0 7px;
+		display: block;
+		font-weight: 400;
+		background: #6E298D;
+		padding: 2px 18px;
+	}
+}
+
+.list-stats--alt {
+	padding-bottom: 16px;
+}

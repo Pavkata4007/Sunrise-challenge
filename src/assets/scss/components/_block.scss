@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------ *\
+	block
+\* ------------------------------------------------------------ */
+
+.block {
+	display: flex;
+	margin: 0 -10px;
+
+	.block__image {
+		max-width: 50%;
+		flex: 0 0 50%;
+		padding: 0 112px 0 19px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.block__content {
+		max-width: 50%;
+		flex: 0 0 50%;
+		padding: 67px 10px 50px;
+		font-size: 18px;
+	}
+
+	h3 {
+		margin-bottom: 13px;
+	}
+
+	.block__image img {
+		max-width: 33.33%;
+		flex: 0 0 33.33%;
+		padding: 0 19px;
+		width: 107px;
+		height: 107px;
+	}
+}
+
+.block--alt {
+
+	.block__image {
+		display: block;
+		padding: 0 103px 0 0;
+	}
+
+	.block__image img {
+		width: 100%;
+		height: auto;
+		max-width: none;
+		padding: 0;
+	}
+
+	.block__content {
+		padding: 81px 10px 50px;
+	}
+
+	.block__content p {
+		margin-bottom: 21px;
+	}
+
+	.block__socials li {
+		list-style: none;
+	}
+
+	.block__socials img {
+		height: 24px;
+		width: 24px;
+	}
+
+	.block__socials span {
+		font-size: 16px;
+	}
+}

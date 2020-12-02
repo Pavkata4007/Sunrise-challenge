@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+	list-messages
+\* ------------------------------------------------------------ */
+
+.list-messages {
+
+	li {
+		padding: 0 22px;
+		list-style: none;
+		font-size: 18px;
+		position: relative;
+		letter-spacing: -0.013em;
+		line-height: 1.83;
+	}
+
+	li + li {
+		margin-top: 1px;
+	}
+
+	li:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 9px;
+		height: 9px;
+		background-color: $c-white;
+		border-radius: 50%;
+	}
+}

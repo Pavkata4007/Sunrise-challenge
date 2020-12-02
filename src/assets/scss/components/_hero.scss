@@ -101,18 +101,23 @@
 	padding: 134px 0 0;
     height: 619px;
 
+	.hero__content {
+		max-width: none;
+		text-align: center;
+	}
+
+
 	.hero__logo {
 		text-align: center;
 		height: 290px;
 		margin-bottom: 82px;
 	}
 
-	.hero__content {
-		margin: 0 auto;
-	}
-
 	.hero__content h1 {
 		font-weight: 600;
-		margin-left: 27px;
 	}
+}
+
+.hero--shorter {
+	height: 599px;
 }
