@@ -1,0 +1,38 @@
+/* ------------------------------------------------------------ *\
+	section-statistics
+\* ------------------------------------------------------------ */
+
+.section-statistics {
+	margin: 0 20px;
+	color: $c-white;
+	padding: 75px 0 160px;
+	letter-spacing: -0.013em;
+
+	h3 {
+		text-transform: uppercase;
+		letter-spacing: -0.02em;
+		margin-bottom: 21px;
+	}
+
+	p {
+		margin-bottom: 28px;
+	}
+
+	.section__entry {
+		display: flex;
+		flex-wrap:wrap;
+		margin: 0 -10px;
+	}
+
+	.section__content {
+		max-width: 50%;
+		flex: 0 0 50%;
+		padding: 0 10px;
+	}
+
+	.section__content h3 {
+		letter-spacing: -0.013em;
+		margin-bottom: 18px;
+		font-weight: 600;
+	}
+}
