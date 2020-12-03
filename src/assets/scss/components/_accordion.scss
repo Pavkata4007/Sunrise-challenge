@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ *\
+	accordion
+\* ------------------------------------------------------------ */
+
+.accordion {
+
+	.accordion__section {
+		margin-bottom: 10px;
+	}
+
+	.accordion__head a {
+		background-color: $c-purple;
+		color: $c-white;
+		display: block;
+		position: relative;
+		text-decoration: none;
+		padding: 14px 21px;
+	}
+
+	.accordion__head h5 {
+		font-weight: 400;
+		letter-spacing: -0.013em;
+		line-height: 1.33;
+		margin-bottom: 0;
+	}
+
+	.accordion__icon {
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.accordion__body {
+		display: none;
+		letter-spacing: -0.013em;
+		padding: 32px 20px 3px;
+	}
+
+	.accordion__body p {
+		margin-bottom: 27px;
+	}
+
+	.is-current .accordion__body {
+		display: block;
+	}
+}
