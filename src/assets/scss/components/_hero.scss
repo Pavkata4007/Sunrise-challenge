@@ -101,6 +101,11 @@
 	padding: 134px 0 0;
     height: 619px;
 
+    @include breakpoint-down(mobile) {
+    	height: 499px;
+    	padding: 155px 0 0;
+    }
+
 	.hero__content {
 		max-width: none;
 		text-align: center;
@@ -111,6 +116,10 @@
 		text-align: center;
 		height: 290px;
 		margin-bottom: 82px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: -67px;
+		}
 	}
 
 	.hero__content h1 {
@@ -120,4 +129,24 @@
 
 .hero--shorter {
 	height: 599px;
+
+	@include breakpoint-down(mobile) {
+		padding: 155px 0 0;
+		margin-bottom: 0;
+		height: 500px;
+	}
+
+	.hero__logo {
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 0;
+		}
+	}
+
+	.hero__content {
+
+		@include breakpoint-down(mobile) {
+			margin-top: -44px;
+		}
+	}
 }

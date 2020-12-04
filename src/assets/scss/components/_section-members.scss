@@ -5,9 +5,17 @@
 .section-members {
 	padding: 68px 0 82px;
 
+	@include breakpoint-down(mobile) {
+		padding: 46px 0 104px;
+	}
+
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		margin-bottom: 32px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 27px;
+		}
 	}
 }

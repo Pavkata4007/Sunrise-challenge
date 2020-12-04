@@ -4,8 +4,16 @@
 
 .section-tiles {
 	padding: 76px 0 82px;
+
+	@include breakpoint-down(mobile) {
+		padding: 48px 0 72px;
+	}
 }
 
 .section-tiles--alt {
 	padding: 83px 0 86px;
+
+	@include breakpoint-down(mobile) {
+		padding: 53px 0 70px;
+	}
 }

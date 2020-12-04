@@ -54,6 +54,10 @@ h2 {
 .h3,
 h3 {
 	font-size: 28px;
+
+	@include breakpoint-down(mobile) {
+		font-size: 22px;
+	}
 }
 
 .h4,

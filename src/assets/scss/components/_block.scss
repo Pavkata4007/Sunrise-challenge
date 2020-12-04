@@ -6,12 +6,28 @@
 	display: flex;
 	margin: 0 -10px;
 
+	@include breakpoint-down(tablet) {
+		display: block;
+		margin: 0;
+	}
+
 	.block__image {
 		max-width: 50%;
 		flex: 0 0 50%;
 		padding: 0 112px 0 19px;
 		display: flex;
 		flex-wrap: wrap;
+
+		@include breakpoint-down(tablet) {
+			padding: 0 50px 0 19px;
+		}
+
+		@include breakpoint-down(mobile) {
+			flex: 0 0 323px;
+			max-width: 323px;
+			padding: 0;
+			margin: 0 auto;
+		}
 	}
 
 	.block__content {
@@ -19,6 +35,14 @@
 		flex: 0 0 50%;
 		padding: 67px 10px 50px;
 		font-size: 18px;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			padding: 0;
+			font-size: 16px;
+			line-height: 1.38;
+		}
 	}
 
 	h3 {
@@ -26,11 +50,23 @@
 	}
 
 	.block__image img {
-		max-width: 33.33%;
-		flex: 0 0 33.33%;
-		padding: 0 19px;
+		margin: 0 19px;
 		width: 107px;
 		height: 107px;
+
+		@include breakpoint-down(small-desktop) {
+			margin: 0 7px;
+		}
+
+		@include breakpoint-down(tablet) {
+			margin: 0 12px 10px;
+			width: 89px;
+			height: 89px;
+		}
+
+		@include breakpoint-down(mobile-large) {
+			margin: 0  6px 34px;
+		}
 	}
 }
 
@@ -39,6 +75,12 @@
 	.block__image {
 		display: block;
 		padding: 0 103px 0 0;
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			padding: 0;
+		}
 	}
 
 	.block__image img {
@@ -48,12 +90,29 @@
 		padding: 0;
 	}
 
+	.block__content h3 {
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 12px;
+		}
+	}
+
 	.block__content {
 		padding: 81px 10px 50px;
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+			font-size: 16px;
+			line-height: 1.38;
+		}
 	}
 
 	.block__content p {
 		margin-bottom: 21px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 0;
+		}
 	}
 
 	.block__socials li {

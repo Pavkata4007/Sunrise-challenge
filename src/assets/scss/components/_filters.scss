@@ -3,18 +3,62 @@
 \* ------------------------------------------------------------ */
 
 .filters {
-	display: flex;
-	margin-bottom: 39px;
+
+	.filters__head {
+		display: none;
+		border: 1px solid #D8D8D8;
+		width: 100%;
+		letter-spacing: -0.013em;
+		padding: 10px 21px;
+		position: relative;
+		margin-bottom: 30px;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
+	}
+
+	.filters__body {
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
+	}
+
+	.filters__head h5 {
+		margin-bottom: 0;
+	}
+
+	.filters__head .filters__icon {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 19px;
+		border-radius: 50%;
+		border: 2px solid #A5D1F4;
+		height: 20px;
+		width: 20px;
+	}
+
+	.filters__head .filters__icon svg {
+		width: 11px;
+		height: 7px;
+		margin: 0 0 5px 2px;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -5px 29px;
+	}
 
 	li {
 		list-style: none;
+		margin-bottom: 10px;
+		padding: 0 5px;
 	}
 
-	li + li {
-		margin-left: 10px;
-	}
-
-	a {
+	ul a {
 		border: 1px solid #CCCCCC;
 		padding: 11px 42px;
 		text-decoration: none;

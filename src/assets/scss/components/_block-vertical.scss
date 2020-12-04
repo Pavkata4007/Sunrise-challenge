@@ -12,10 +12,19 @@
 		font-size: 18px;
 		max-width: 560px;
 		letter-spacing: -0.013em;
+
+		@include breakpoint-down(mobile) {
+			line-height: 1.38;
+			font-size: 16px;
+		}
 	}
 
 	.block__content p {
 		margin-bottom: 47px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 41px;
+		}
 	}
 }
 

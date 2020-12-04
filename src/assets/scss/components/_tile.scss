@@ -9,11 +9,25 @@
 	border-top: 1px solid rgba(110, 41, 141, .25);
 	border-bottom: 1px solid rgba(110, 41, 141, .25);
 
+	@include breakpoint-down(mobile) {
+		margin: 0;
+		padding: 31px 0;
+		display: block;
+	}
+
 	.tile__image {
 		max-width: 16.8%;
 		flex: 0 0 16.8%;
 		padding: 0 10px;
 		text-align: center;
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			padding: 0;
+			margin-bottom: 25px;
+			text-align: left;
+		}
 	}
 
 	.tile__content {
@@ -22,20 +36,41 @@
 		padding: 0 10px;
 		line-height: 1.33;
 		letter-spacing: -0.013em;
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			padding: 0;
+			font-size: 16px;
+			line-height: 1.38;
+		}
 	}
 
 	.tile__content h3 {
 		text-transform: uppercase;
 		line-height: 1;
 		letter-spacing: -0.02em;
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			margin-bottom: 22px;
+		}
 	}
 
 	.tile__actions {
 		margin-top: 34px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 28px;
+		}
 	}
 
 	.tile__actions a {
 		padding: 12px 61px;
+
+		@include breakpoint-down(mobile-medium) {
+			width: 100%;
+		}
 	}
 
 	.tile__contact span {
@@ -47,5 +82,19 @@
 	.tile__contact a {
 		text-decoration: none;
 		margin: 0 3px;
+	}
+}
+
+.tile--alt {
+
+	.tile__actions a {
+
+		@include breakpoint-down(mobile) {
+			border-radius: 30px;
+			border: 1px solid $c-purple;
+			text-transform: none;
+			font-size: 16px;
+			padding: 11px 28px;
+		}
 	}
 }

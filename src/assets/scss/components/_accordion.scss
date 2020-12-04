@@ -14,7 +14,11 @@
 		display: block;
 		position: relative;
 		text-decoration: none;
-		padding: 14px 21px;
+		padding: 14px 30px 14px 21px;
+
+		@include breakpoint-down(mobile) {
+			padding: 12px 26px 12px 12px;
+		}
 	}
 
 	.accordion__head h5 {
@@ -22,6 +26,10 @@
 		letter-spacing: -0.013em;
 		line-height: 1.33;
 		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			font-size: 16px;
+		}
 	}
 
 	.accordion__icon {
@@ -29,19 +37,39 @@
 		right: 15px;
 		top: 50%;
 		transform: translateY(-50%);
+		transition: transform .6s;
+
+		@include breakpoint-down(mobile) {
+			right: 12px;
+		}
+	}
+
+	.accordion__icon img {
+		width: 13px;
+		height: 11px;
+
 	}
 
 	.accordion__body {
-		display: none;
 		letter-spacing: -0.013em;
 		padding: 32px 20px 3px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 16px;
+			line-height: 1.38;
+			padding: 29px 10px 1px;
+		}
 	}
 
 	.accordion__body p {
 		margin-bottom: 27px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 22px;
+		}
 	}
 
-	.is-current .accordion__body {
-		display: block;
+	.is-current .accordion__icon {
+		transform: translateY(-50%) rotate(180deg);
 	}
 }

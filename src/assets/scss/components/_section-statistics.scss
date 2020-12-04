@@ -10,31 +10,60 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 
+	@include breakpoint-down(mobile) {
+		margin: 0 15px;
+		padding: 45px 0 155px;
+	}
+
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		margin-bottom: 21px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 17px;
+		}
 	}
 
 	p {
 		margin-bottom: 28px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 33px;
+		}
 	}
 
 	.section__entry {
 		display: flex;
 		flex-wrap:wrap;
 		margin: 0 -10px;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			margin: 0;
+		}
 	}
 
 	.section__content {
 		max-width: 50%;
 		flex: 0 0 50%;
 		padding: 0 10px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			padding: 0;
+		}
 	}
 
 	.section__content h3 {
 		letter-spacing: -0.013em;
 		margin-bottom: 18px;
 		font-weight: 600;
+
+		@include breakpoint-down(mobile) {
+			line-height: 1.18;
+			margin-bottom: 27px;
+		}
 	}
 }

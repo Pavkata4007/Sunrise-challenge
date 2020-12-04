@@ -5,9 +5,17 @@
 .section-questions {
 	padding: 96px 0 53px;
 
+	@include breakpoint-down(mobile) {
+		padding: 42px 0 40px;
+	}
+
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		margin-bottom: 32px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 26px;
+		}
 	}
 }

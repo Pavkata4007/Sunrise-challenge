@@ -6,10 +6,19 @@
 	margin-top: -265px;
 	padding-bottom: 25px;
 
+	@include breakpoint-down(mobile) {
+		margin-top: -234px;
+		padding-bottom: 20px;
+	}
+
 	h3 {
 		color: #fff;
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		margin-bottom: 34px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 26px;
+		}
 	}
 }

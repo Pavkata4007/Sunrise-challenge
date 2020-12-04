@@ -8,6 +8,10 @@
 		margin-bottom: 24px;
 		position: relative;
 
+		@include breakpoint-down(tablet) {
+			max-width: 364px;
+		}
+
 		@include breakpoint-down(mobile) {
 			margin-bottom: 23px;
 		}
@@ -85,11 +89,20 @@
 		overflow: hidden;
 		height: 135px;
 		width: 135px;
+
+		@include breakpoint-down(small-desktop) {
+			height: 100px;
+			width: 100px;
+		}
 	}
 }
 
 .card--alt {
 	.card__actions span {
 		padding: 12px 63px;
+
+		@include breakpoint-down(mobile-medium) {
+			width: 100%;
+		}
 	}
 }

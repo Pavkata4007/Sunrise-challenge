@@ -33,3 +33,9 @@
 		margin-bottom: 18px;
 	}
 }
+
+.section-cards--mobile {
+	@include breakpoint-down(mobile) {
+		margin: -234px 0 71px;
+	}
+}

@@ -8,6 +8,13 @@
 	padding: 0 8px;
 	margin-bottom: 60px;
 
+	@include breakpoint-down(mobile) {
+		max-width: 100%;
+		flex: 0 0 100%;
+		padding: 0;
+		margin-bottom: 41px;
+	}
+
 	.sponsor__image {
 		margin-bottom: 22px;
 	}
@@ -15,14 +22,26 @@
 	.sponsor__content {
 		line-height: 1.38;
 		letter-spacing: -0.013em;
+
+		@include breakpoint-down(mobile) {
+			font-size: 16px;
+		}
 	}
 
 	.sponsor__content p {
 		margin-bottom: 34px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 25px;
+		}
 	}
 
 	.sponsor__actions a {
 		padding: 12px 66px;
+
+		@include breakpoint-down(mobile-medium) {
+			width: 100%;
+		}
 	}
 
 	.sponsor__content h3 {
@@ -30,5 +49,9 @@
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
 		margin-bottom: 20px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 18px;
+		}
 	}
 }

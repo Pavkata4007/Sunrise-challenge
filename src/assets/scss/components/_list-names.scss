@@ -8,6 +8,10 @@
 		list-style: none;
 		font-size: 18px;
 		letter-spacing: -0.013em;
+
+		@include breakpoint-down(mobile) {
+			font-size: 16px;
+		}
 	}
 
 	li + li {

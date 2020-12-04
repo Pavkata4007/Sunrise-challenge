@@ -10,6 +10,10 @@
 		font-size: 28px;
 		line-height: 1.36;
 		margin-bottom: 14px;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
 	}
 
 	span {
@@ -20,6 +24,14 @@
 		background: #F1B434;
 		color: $c-purple;
 		padding: 4px 15px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			margin: 0;
+			font-size: 22px;
+			line-height: 1.45;
+		}
 	}
 
 	strong {
@@ -30,6 +42,15 @@
 		font-weight: 400;
 		background: #6E298D;
 		padding: 2px 18px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			margin: 0;
+			font-size: 22px;
+			line-height: 1.45;
+			padding: 8px 14px;
+		}
 	}
 }
 

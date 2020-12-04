@@ -10,9 +10,19 @@
 	line-height: 1.36;
 	background: linear-gradient(to bottom, rgba(109,41,140,1) 0%,rgba(109,41,140,1) 64%,rgba(113,43,139,1) 64%,rgba(111,44,137,1) 65%,rgba(115,46,139,1) 66%,rgba(115,46,135,1) 66%,rgba(120,53,132,1) 68%,rgba(123,54,134,1) 69%,rgba(123,55,130,1) 69%,rgba(138,71,122,1) 75%,rgba(140,73,117,1) 76%,rgba(143,76,119,1) 77%,rgba(144,78,114,1) 77%,rgba(148,83,115,1) 79%,rgba(149,83,111,1) 79%,rgba(153,88,108,1) 81%,rgba(159,92,109,1) 82%,rgba(159,93,105,1) 83%,rgba(171,106,100,1) 88%,rgba(172,108,96,1) 88%,rgba(177,111,95,1) 89%,rgba(183,119,91,1) 92%,rgba(186,122,87,1) 93%,rgba(188,124,88,1) 94%,rgba(190,127,84,1) 95%,rgba(193,129,85,1) 96%,rgba(198,136,79,1) 98%,rgba(201,136,78,1) 98%,rgba(200,138,77,1) 99%,rgba(204,140,78,1) 100%);
 
+	@include breakpoint-down(mobile) {
+		padding: 44px 0 282px;
+		font-size: 22px;
+	}
+
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			margin-bottom: 19px;
+		}
 	}
 }
 
@@ -20,12 +30,26 @@
 	margin-top: 20px;
 	padding: 76px 0 68px;
 
+	@include breakpoint-down(mobile) {
+		margin-top: 8px;
+		padding: 43px 0 47px;
+	}
+
 	p {
 		margin-bottom: 110px;
+
+		@include breakpoint-down(mobile) {
+			/* margin-bottom: 93px; */
+			margin-bottom: 46px;
+		}
 	}
 
 	.section__block {
 		margin-bottom: 58px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: -8px;
+		}
 	}
 
 	.section__block--alt {
@@ -35,9 +59,32 @@
 
 .section--larger {
 	padding: 75px 0 295px;
+
+	@include breakpoint-down(mobile) {
+		padding: 46px 0 266px;
+	}
+
+	.section__block--alt {
+		margin: 10px 0 30px;
+	}
 }
 
 .section--lower {
 	margin-top: 20px;
 	padding: 69px 0 328px;
+
+	@include breakpoint-down(mobile) {
+		margin-top: 10px;
+		padding: 45px 0 276px;
+		font-size: 22px;
+	}
+
+	h3 {
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			line-height: 1.36;
+			margin-bottom: 8px;
+		}
+	}
 }
