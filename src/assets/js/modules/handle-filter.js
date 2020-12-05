@@ -35,4 +35,15 @@ const handleClick = ($link, $target) => {
 	});
 }
 
+/**
+ * On click show the filters.
+ */
+
+$('.js-filters .filters__head').on('click', function() {
+	const $filters = $('.js-filters');
+	const $win = $(window);
+
+	$filters.toggleClass('is-showing');
+});
+
 export default handleClick;
