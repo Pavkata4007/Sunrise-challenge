@@ -49,8 +49,8 @@
 		margin-bottom: 13px;
 	}
 
-	.block__image > img {
-		/* margin: 0 19px; */
+	.block__image--alt img {
+		margin: 0 19px;
 		width: 107px;
 		height: 107px;
 
@@ -67,10 +67,10 @@
 		@include breakpoint-down(mobile-large) {
 			margin: 20px 6px 34px;
 		}
-	}
-
-	.block__image--alt img {
-		margin: 0 19px;
+		@include breakpoint-down(mobile-small) {
+			width: 75px;
+			height: 75px;
+		}
 	}
 }
 
