@@ -9,7 +9,7 @@
 		display: flex;
 		font-size: 28px;
 		line-height: 1.36;
-		margin-bottom: 14px;
+		margin-bottom: 17px;
 
 		@include breakpoint-down(mobile) {
 			display: block;
@@ -35,8 +35,9 @@
 	}
 
 	strong {
-		max-width: 76%;
-		flex: 0 0 76%;
+		flex: 1 1 auto;
+		/* max-width: 76%;
+		flex: 0 0 76%; */
 		margin: 0 0 0 7px;
 		display: block;
 		font-weight: 400;

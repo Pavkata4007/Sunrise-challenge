@@ -9,6 +9,7 @@
 	letter-spacing: -0.013em;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 
 	@include breakpoint-down(mobile) {
 		margin: 0 15px;

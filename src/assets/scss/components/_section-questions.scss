@@ -3,7 +3,8 @@
 \* ------------------------------------------------------------ */
 
 .section-questions {
-	padding: 96px 0 53px;
+	/* padding: 96px 0 53px; */
+	padding: 92px 0 61px;
 
 	@include breakpoint-down(mobile) {
 		padding: 42px 0 40px;
@@ -12,7 +13,7 @@
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
-		margin-bottom: 32px;
+		margin-bottom: 29px;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 26px;

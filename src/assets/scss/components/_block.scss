@@ -50,7 +50,7 @@
 	}
 
 	.block__image > img {
-		margin: 0 19px;
+		/* margin: 0 19px; */
 		width: 107px;
 		height: 107px;
 
@@ -113,6 +113,17 @@
 		@include breakpoint-down(mobile) {
 			margin-bottom: 0;
 		}
+	}
+
+	.block__socials {
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
+	}
+
+	.block__socials a {
+		text-decoration: none;
 	}
 
 	.block__socials li {

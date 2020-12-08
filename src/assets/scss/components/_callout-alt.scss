@@ -28,6 +28,10 @@
 			margin: 0 auto 23px;
 			padding-bottom: 4px;
 		}
+
+		@include breakpoint-down(mobile-small) {
+			text-align: center;
+		}
 	}
 
 	h6:hover {
@@ -86,6 +90,12 @@
 			font-size: 14px;
 			margin: 0 9px;
 		}
+
+		@include breakpoint-down(mobile-small) {
+			display: block;
+			text-align: center;
+			margin-bottom: 10px;
+		}
 	}
 
 	.callout__socials li + li {
@@ -93,6 +103,13 @@
 
 		@include breakpoint-down(mobile) {
 			margin-left: 14px;
+		}
+	}
+
+	.callout__socials ul {
+
+		@include breakpoint-down(mobile-small) {
+			justify-content: center;
 		}
 	}
 

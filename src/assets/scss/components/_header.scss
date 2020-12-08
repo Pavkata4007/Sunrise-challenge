@@ -8,6 +8,10 @@
 	top: 0;
 	right: 0;
 
+	.header__logo a {
+		display: block;
+	}
+
 	&.is-showing {
 		position: relative;
 		top: 0;

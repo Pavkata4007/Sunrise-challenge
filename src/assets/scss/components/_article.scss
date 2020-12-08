@@ -138,6 +138,13 @@
 		color: $c-purple;
 	}
 
+	.article__socials {
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
+	}
+
 	.article__socials li {
 		list-style: none;
 	}
@@ -151,11 +158,6 @@
 	.article__socials span {
 		margin: 0 3px;
 		font-size: 16px;
-
-		@include breakpoint-down(mobile) {
-			font-size: 14px;
-			margin: 0 1px;
-		}
 	}
 }
 

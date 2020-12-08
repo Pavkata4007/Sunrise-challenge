@@ -4,7 +4,7 @@
  *
  */
 
-$('.js-nav li a').on('click', function() {
+$('.js-nav li a').on('click', function(evn) {
 	const $this = $(this);
 	const $dropdown = $this.siblings('.dropdown');
 
@@ -12,4 +12,6 @@ $('.js-nav li a').on('click', function() {
 		$dropdown.toggleClass('is-showing');
 		$this.toggleClass('is-showing')
 	}
+
+	evn.preventDefault();
 })

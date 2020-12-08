@@ -5,14 +5,14 @@
 .dropdown {
 	position: absolute;
 	left: 0;
-	top: 165%;
+	top: 125%;
 	width: 200px;
 	display: block;
 	margin-left: 0;
 	transform: scaleY(0);
 	opacity: 0;
 	transform-origin: top;
-	transition: transform .5s, opacity .3s;
+	transition: transform .7s, opacity .3s;
 
 	@include breakpoint-down(tablet) {
 		position: static;
@@ -41,6 +41,7 @@
 	li {
 		background: #6E298D;
 		padding: 14px 2px 18px;
+		transition: background .3s;
 
 		@include breakpoint-down(tablet) {
 			padding: 16px 15px 9px;

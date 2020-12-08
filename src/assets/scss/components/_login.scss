@@ -31,6 +31,8 @@
 	display: none;
 	background-color: transparent;
 	color: $c-white;
+	width: unset;
+	text-align: left;
 
 	@include breakpoint-down(tablet) {
 		display: block;

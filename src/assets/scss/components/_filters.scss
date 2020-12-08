@@ -60,30 +60,44 @@
 	.filters__head .filters__icon svg {
 		width: 11px;
 		height: 7px;
-		margin: 0 0 5px 2px;
+		margin: 0 0 8px 2px;
 	}
 
 	ul {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -5px 29px;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
 	}
 
 	li {
 		list-style: none;
 		margin-bottom: 10px;
 		padding: 0 5px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 0;
+		}
 	}
 
 	ul a {
 		border: 1px solid #CCCCCC;
-		padding: 11px 42px;
+		padding: 11px 34px 11px 49px;
 		text-decoration: none;
 		display: block;
 		font-size: 18px;
 		letter-spacing: -0.013em;
 		line-height: 1.33;
 		position: relative;
+
+		@include breakpoint-down(mobile) {
+			border:none;
+			border-top: 1px solid #A5D1F4;
+			padding: 16px 58px;
+		}
 	}
 
 	a:before {
@@ -97,6 +111,14 @@
 		top:50%;
 		transform: translateY(-50%);
 		left: 28px;
+
+		@include breakpoint-down(mobile) {
+			height: 14px;
+			width: 14px;
+			background-color: $c-white;
+			border: 3px solid #A5D1F4;
+			left: 23px;
+		}
 	}
 
 	.is-current a:before {
