@@ -16,5 +16,5 @@ $('.js-mobile-nav').on('click', function() {
 		$('.header .header__inner').removeClass('is-fixed');
 	}
 
-	$('.wrapper').toggleClass('is-fixed');
+	$('body').toggleClass('is-fixed');
 });

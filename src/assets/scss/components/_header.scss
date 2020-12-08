@@ -109,12 +109,12 @@
 	.header__content {
 		display: flex;
 		align-items: center;
-
+		flex: 1;
 	}
 
 }
 
-.is-active {
+.header.is-active {
 	position: fixed;
 	width: 100%;
 	display: block;

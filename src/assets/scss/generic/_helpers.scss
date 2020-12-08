@@ -2,6 +2,7 @@
   Helpers
 \* ------------------------------------------------------------ */
 
+
 /*  Clear  */
 
 .clear:after {
@@ -127,5 +128,12 @@
 	}
 	.visible-lg-inline-block {
 		display: inline-block !important;
+	}
+}
+
+body {
+
+	&.is-fixed {
+		overflow: hidden;
 	}
 }

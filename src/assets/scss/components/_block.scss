@@ -14,9 +14,7 @@
 	.block__image {
 		max-width: 50%;
 		flex: 0 0 50%;
-		padding: 0 112px 0 19px;
-		display: flex;
-		flex-wrap: wrap;
+		padding: 0 10px 0 43px;
 
 		@include breakpoint-down(tablet) {
 			padding: 0 50px 0 19px;
@@ -49,6 +47,16 @@
 		margin-bottom: 13px;
 	}
 
+	.block__image--alt {
+		@include breakpoint-down(tablet) {
+			margin-bottom: 80px;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 45px;
+		}
+	}
+/*
 	.block__image--alt img {
 		margin: 0 19px;
 		width: 107px;
@@ -71,7 +79,7 @@
 			width: 75px;
 			height: 75px;
 		}
-	}
+	} */
 }
 
 .block--alt {
