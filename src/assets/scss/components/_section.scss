@@ -63,10 +63,14 @@
 }
 
 .section--larger {
-	padding: 75px 0 295px;
+	padding: 75px 0 290px;
 
 	@include breakpoint-down(mobile) {
 		padding: 46px 0 266px;
+	}
+
+	p {
+		margin-bottom: 65px;
 	}
 
 	.section__block--alt {

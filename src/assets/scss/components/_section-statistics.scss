@@ -5,7 +5,7 @@
 .section-statistics {
 	margin: 0 20px;
 	color: $c-white;
-	padding: 75px 0 160px;
+	padding: 69px 0 164px;
 	letter-spacing: -0.013em;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 	h3 {
 		text-transform: uppercase;
 		letter-spacing: -0.02em;
-		margin-bottom: 21px;
+		margin-bottom: 15px;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 17px;
@@ -27,7 +27,8 @@
 	}
 
 	p {
-		margin-bottom: 28px;
+		font-size: 18px;
+		margin-bottom: 25px;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 33px;
@@ -59,8 +60,9 @@
 
 	.section__content h3 {
 		letter-spacing: -0.013em;
-		margin-bottom: 18px;
+		margin-bottom: 15px;
 		font-weight: 600;
+		line-height: 1.36;
 
 		@include breakpoint-down(mobile) {
 			line-height: 1.18;
