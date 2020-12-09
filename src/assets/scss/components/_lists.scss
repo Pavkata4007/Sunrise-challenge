@@ -3,10 +3,10 @@
 \* ------------------------------------------------------------ */
 
 .lists {
-	margin-bottom: 65px;
+	margin-bottom: 58px;
 
 	@include breakpoint-down(mobile) {
-		margin-bottom: 48px;
+		margin-bottom: 40px;
 	}
 
 	.lists__items {
@@ -23,7 +23,7 @@
 		@include breakpoint-down(mobile) {
 			max-width: 50%;
 			flex: 0 0 50%;
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 		}
 	}
 }

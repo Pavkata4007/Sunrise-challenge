@@ -24,7 +24,7 @@
 			flex: 0 0 323px;
 			max-width: 323px;
 			padding: 0;
-			margin: 0 auto;
+			margin: 0 auto 23px;
 		}
 	}
 
@@ -105,7 +105,7 @@
 	.block__content h3 {
 
 		@include breakpoint-down(mobile) {
-			margin-bottom: 12px;
+			margin-bottom: 18px;
 		}
 	}
 
@@ -123,7 +123,8 @@
 		margin-bottom: 21px;
 
 		@include breakpoint-down(mobile) {
-			margin-bottom: 0;
+			margin-bottom: 29px;
+			padding-bottom: 0;
 		}
 	}
 

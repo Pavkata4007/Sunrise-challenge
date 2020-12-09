@@ -3,11 +3,10 @@
 \* ------------------------------------------------------------ */
 
 .section-questions {
-	/* padding: 96px 0 53px; */
 	padding: 92px 0 61px;
 
 	@include breakpoint-down(mobile) {
-		padding: 42px 0 40px;
+		padding: 39px 0 35px;
 	}
 
 	h3 {
@@ -16,7 +15,7 @@
 		margin-bottom: 29px;
 
 		@include breakpoint-down(mobile) {
-			margin-bottom: 26px;
+			margin-bottom: 22px;
 		}
 	}
 }

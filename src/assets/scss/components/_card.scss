@@ -99,6 +99,10 @@
 
 .card--alt {
 
+	@include breakpoint-down(mobile) {
+		margin-bottom: 40px;
+	}
+
 	.card__actions span {
 		padding: 12px 63px;
 
@@ -115,10 +119,23 @@
 		line-height: 1.36;
 	}
 
+
+	.card__content h3 {
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 18px;
+		}
+	}
+
 	.card__content {
 		line-height: 1.4;
 	}
-.card__content p {
+
+	.card__content p {
 	    margin-bottom: 37px;
+
+	    @include breakpoint-down(mobile) {
+	    	margin-bottom: 25px;
+	    }
 	}
 }

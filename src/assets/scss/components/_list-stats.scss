@@ -13,6 +13,7 @@
 
 		@include breakpoint-down(mobile) {
 			display: block;
+			margin-bottom: 14px;
 		}
 	}
 
@@ -36,8 +37,6 @@
 
 	strong {
 		flex: 1 1 auto;
-		/* max-width: 76%;
-		flex: 0 0 76%; */
 		margin: 0 0 0 7px;
 		display: block;
 		font-weight: 400;

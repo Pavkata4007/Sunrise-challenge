@@ -23,7 +23,8 @@
 		margin-bottom: 47px;
 
 		@include breakpoint-down(mobile) {
-			margin-bottom: 41px;
+			margin-bottom: 48px;
+			padding-bottom: 0;
 		}
 	}
 }

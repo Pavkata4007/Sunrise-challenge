@@ -115,7 +115,7 @@
 	.hero__logo {
 		text-align: center;
 		height: 290px;
-		margin-bottom: 82px;
+		margin-bottom: 68px;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: -67px;
@@ -146,7 +146,7 @@
 	.hero__content {
 
 		@include breakpoint-down(mobile) {
-			margin-top: -44px;
+			margin-top: -73px;
 		}
 	}
 }
