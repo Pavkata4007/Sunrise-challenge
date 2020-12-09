@@ -19,5 +19,11 @@ $('.js-nav li a').on('click', function(evn) {
 		$this.removeClass('is-showing');
 	})
 
+	$win.on('resize', function() {
+		if ($win.width() > 1023) {
+			$dropdown.hide();
+		}
+	}
+
 	evn.preventDefault();
 })
