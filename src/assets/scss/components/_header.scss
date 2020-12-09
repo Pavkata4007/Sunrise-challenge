@@ -119,83 +119,86 @@
 }
 
 .header.is-active {
-	position: fixed;
-	width: 100%;
-	display: block;
-	top: 0;
-	left: 0;
-	right: 0;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	text-align: left;
-	background: rgba(255 ,255, 255, .9);
-	height: 100vh;
-	background-color: $c-purple;
-	transform: translateY(0);
-	transform-origin: top;
-	transition: transform .6s;
-	z-index: 2;
 
-	.header__logo {
-		margin-left: 0;
-		position: relative;
-		z-index: 3;
-		margin-bottom: 66px;
-	}
-
-	.header__entry {
-		display: block;
-	}
-
-	.header__inner {
-		background: transparent;
-	}
-
-	.header__content {
-		display: block;
-	}
-
-	.nav {
-		display: block;
-		margin-bottom: 20px;
-	}
-
-	.login--alt {
-		margin: 0 15px;
-		font-size: 15px;
-		margin-bottom: 24px;
-	}
-
-	.nav a {
-		padding: 0;
-	}
-
-	.nav-access ul {
-		display: flex;
+	@include breakpoint-down(tablet) {
+		position: fixed;
 		width: 100%;
-	}
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		text-align: left;
+		background: rgba(255 ,255, 255, .9);
+		height: 100vh;
+		background-color: $c-purple;
+		transform: translateY(0);
+		transform-origin: top;
+		transition: transform .6s;
+		z-index: 2;
 
-	.nav-access {
-		margin: 0 -15px;
-	}
+		.header__logo {
+			margin-left: 0;
+			position: relative;
+			z-index: 3;
+			margin-bottom: 66px;
+		}
 
-	.nav-access li {
-		width: 50%;
-	}
+		.header__entry {
+			display: block;
+		}
 
-	.nav-access ul a {
-		font-size: 16px;
-		width: 100%;
-		padding: 21px 0;
-		background-color: #4A1961;
-	}
+		.header__inner {
+			background: transparent;
+		}
 
-	.login--alt:hover {
-		background: transparent;
-		color: $c-white;
-	}
+		.header__content {
+			display: block;
+		}
 
-	.login--alt:hover svg path {
-		fill: #fff;
+		.nav {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		.login--alt {
+			margin: 0 15px;
+			font-size: 15px;
+			margin-bottom: 24px;
+		}
+
+		.nav a {
+			padding: 0;
+		}
+
+		.nav-access ul {
+			display: flex;
+			width: 100%;
+		}
+
+		.nav-access {
+			margin: 0 -15px;
+		}
+
+		.nav-access li {
+			width: 50%;
+		}
+
+		.nav-access ul a {
+			font-size: 16px;
+			width: 100%;
+			padding: 21px 0;
+			background-color: #4A1961;
+		}
+
+		.login--alt:hover {
+			background: transparent;
+			color: $c-white;
+		}
+
+		.login--alt:hover svg path {
+			fill: #fff;
+		}
 	}
 }
