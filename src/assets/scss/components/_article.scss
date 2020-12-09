@@ -138,13 +138,6 @@
 		color: $c-purple;
 	}
 
-	.article__socials {
-
-		@include breakpoint-down(mobile) {
-			display: none;
-		}
-	}
-
 	.article__socials li {
 		list-style: none;
 	}

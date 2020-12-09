@@ -5,7 +5,7 @@
 .dropdown {
 	position: absolute;
 	left: 0;
-	top: 125%;
+	top: 100%;
 	width: 200px;
 	display: block;
 	margin-left: 0;
@@ -26,11 +26,9 @@
 
 
 	a {
-		text-decoration: none;
 		letter-spacing: -0.02em !important;
-		font-size: 16px;
-		font-weight: 600;
 		line-height: 1.38;
+		padding: 1px 7px !important;
 
 		@include breakpoint-down(tablet) {
 			font-size: 22px;
