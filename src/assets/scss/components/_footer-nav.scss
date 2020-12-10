@@ -14,7 +14,7 @@
 	}
 
 	li + li {
-		margin-top: 7px;
+		margin-top: 3px;
 
 		@include breakpoint-down(mobile) {
 			margin-top: 1px;
