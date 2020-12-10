@@ -21,15 +21,17 @@
 
 	.sponsor__content {
 		line-height: 1.38;
-		letter-spacing: -0.013em;
+		letter-spacing: 0.013em;
+		line-height: 1.42;
 
 		@include breakpoint-down(mobile) {
 			font-size: 16px;
+			letter-spacing: -0.013em;
 		}
 	}
 
 	.sponsor__content p {
-		margin-bottom: 41px;
+		margin-bottom: 33px;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 25px;

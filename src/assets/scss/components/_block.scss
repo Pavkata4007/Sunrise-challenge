@@ -33,6 +33,7 @@
 		flex: 0 0 50%;
 		padding: 67px 10px 50px;
 		font-size: 18px;
+		letter-spacing: -0.013em;
 
 		@include breakpoint-down(tablet) {
 			max-width: 100%;

@@ -3,7 +3,8 @@
 \* ------------------------------------------------------------ */
 
 .callout {
-	letter-spacing: -0.013em;
+	letter-spacing: 0.013em;
+	line-height: 1.4;
 	margin-bottom: 75px;
 
 	@include breakpoint-down(tablet) {
@@ -26,7 +27,7 @@
 	}
 
 	p {
-		margin: 0 6px 32px;
+		margin: 0 6px 30px;
 
 		@include breakpoint-down(mobile) {
 			font-size: 16px;
@@ -38,10 +39,12 @@
 	h5 {
 		text-transform: uppercase;
 		margin: 0 2px 16px;
+		letter-spacing: -0.05em;
 
 		@include breakpoint-down(mobile) {
 			font-size: 16px;
 			margin: 0 0 15px;
+			letter-spacing: -0.013em;
 		}
 	}
 }

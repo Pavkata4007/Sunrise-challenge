@@ -41,6 +41,8 @@
 
 		@include breakpoint-down(mobile) {
 			right: 12px;
+			transform: none;
+			top: 9px;
 		}
 	}
 
@@ -71,5 +73,9 @@
 
 	.is-current .accordion__icon {
 		transform: translateY(-50%) rotate(180deg);
+
+		@include breakpoint-down(mobile) {
+			transform: rotate(180deg);
+		}
 	}
 }

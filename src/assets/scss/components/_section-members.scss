@@ -3,10 +3,10 @@
 \* ------------------------------------------------------------ */
 
 .section-members {
-	padding: 61px 0 85px;
+	padding: 61px 0 80px;
 
 	@include breakpoint-down(mobile) {
-		padding: 41px 0 104px;
+		padding: 41px 0 101px;
 	}
 
 	h3 {

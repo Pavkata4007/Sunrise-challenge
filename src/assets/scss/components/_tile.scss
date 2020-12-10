@@ -34,8 +34,8 @@
 		max-width: 83.2%;
 		flex: 0 0 83.2%;
 		padding: 0 10px;
-		line-height: 1.33;
-		letter-spacing: -0.013em;
+		line-height: 1.4;
+		letter-spacing: 0.013em;
 
 		@include breakpoint-down(mobile) {
 			max-width: 100%;
@@ -44,6 +44,10 @@
 			font-size: 16px;
 			line-height: 1.38;
 		}
+	}
+
+	.tile__content p {
+		margin-bottom: 25px;
 	}
 
 	.tile__content h3 {
@@ -77,6 +81,11 @@
 		display: block;
 		font-size: 18px;
 		font-weight: 700;
+		letter-spacing: -0.013em;
+
+		@include breakpoint-down(mobile) {
+			font-size: 16px;
+		}
 	}
 
 	.tile__contact a {
